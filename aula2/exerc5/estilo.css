@@ -1,0 +1,12 @@
+﻿table,tr {
+   border: 1px solid black;
+   width: 98%;
+}
+
+.coluna {
+  float: left;
+  width:28%;
+  margin: 1.5%;
+  padding: 0.5%;
+  text-align: justify;
+}

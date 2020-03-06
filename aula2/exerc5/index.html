@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<head>
+    <title>JAVASCRIPT</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<h1>JAVASCRIPT</h1>
+<form>
+
+<table>
+<tr><td style="border:1px solid black">
+  <p>DADOS PESSOAIS:</p>
+
+  <label for="nome">nome:</label><br>
+  <input type="text" id="nome" name="nome" value=""><br>
+
+  <label for="nascimento">nascimento (dd/mm/aaaa):</label><br>
+  <input type="text" id="dia_nascimento" name="dia_nascimento" value=""> /
+  <input type="text" id="mes_nascimento" name="mes_nascimento" value=""> /
+  <input type="text" id="ano_nascimento" name="ano_nascimento" value=""><br>
+
+  <label for="nome_mae">nome da mãe:</label><br>
+  <input type="text" id="nome_mae" name="nome_mae" value=""><br>
+
+  <label for="nome_pai">nome do pai:</label><br>
+  <input type="text" id="nome_pai" name="nome_pai" value=""><br>
+
+</td></tr>
+<tr><td  style="border:1px solid black">
+  <p>INFORMAÇÕES DE MATRÍCULA:</p>
+
+<div class="coluna">
+<label for="serie">Série:</label>
+<select id="serie">
+  <option value="fundamental1">Fundamental 1</option>
+  <option value="fundamental2">Fundamental 2</option>
+  <option value="medio">Médio</option>
+  <option value="tecnico">Técnico</option>
+</select><br></div>
+
+<div class="coluna">
+<label for="manha">Turno:</label><br>
+<input type="radio" id="manha" name="turno" value="manhã">
+<label for="manha">Manhã</label><br>
+<input type="radio" id="tarde" name="turno" value="tarde">
+<label for="tarde">Tarde</label><br></div>
+
+<div class="coluna">
+<label for="informatica">Atividades Extracurriculares:</label><br>
+<input type="checkbox" id="informatica" name="informatica" value="Informática">
+<label for="informatica">Informática</label><br>
+<input type="checkbox" id="xadrez" name="xadrez" value="xadrez">
+<label for="xadrez">Xadrez</label><br>
+<input type="checkbox" id="futebol" name="futebol" value="futebol">
+<label for="futebol">Futebol</label><br></div>
+
+
+</td></tr>
+</table>
+
+  <button type="button" onclick="ler()">ENVIA FORMULÁRIO</button> 
+  <button type="button" onclick="soma(document.getElementById('n1').value,document.getElementById('n2').value)">LIMPA CAMPOS</button>
+</form> 
+<p id="escrever">R:</p>
+</body>
+<footer>
+    <hr>    
+    <p>DESENVOLVIDO POR ALUNO - 2020 DIREITOS RESERVADOS</p>
+    <hr>
+</footer>
+</html>
